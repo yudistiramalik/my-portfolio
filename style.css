@@ -495,3 +495,99 @@ span {
   font-size: 1.5rem;
   color: var(--second-bg-color);
 }
+/* ==========================================
+   Responsive (Tablet & HP)
+=========================================== */
+@media (max-width: 991px) {
+  .header {
+    padding: 1rem 5%;
+  }
+  section {
+    padding: 7rem 5% 2rem;
+  }
+  .footer {
+    padding: 1rem 5%;
+  }
+}
+
+@media (max-width: 768px) {
+  #menu-icon {
+    display: block;
+    cursor: pointer;
+  }
+
+  .navbar {
+    position: absolute;
+    top: 100%;
+    left: -100%;
+    width: 100%;
+    background: var(--bg-color);
+    flex-direction: column;
+    text-align: center;
+    transition: var(--transition);
+  }
+
+  .navbar a {
+    margin: 1.5rem 0;
+    font-size: 1.2rem;
+  }
+
+  .navbar.active {
+    left: 0;
+  }
+
+  .home {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .home-content {
+    margin-top: 2rem;
+  }
+
+  .home-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .home-content h3 {
+    font-size: 1.8rem;
+  }
+
+  .home-img {
+    margin: 2rem 0 0 0;
+  }
+
+  .home-img img {
+    width: 80vw;
+  }
+
+  .about {
+    flex-direction: column;
+  }
+
+  .about-img img {
+    width: 70vw;
+  }
+
+  .services-container {
+    flex-direction: column;
+  }
+
+  .portfolio-container {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+
+  .portfolio-box {
+    height: auto;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 13px;
+  }
+  .contact form .input-box input {
+    width: 100%;
+  }
+}
